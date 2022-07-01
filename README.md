@@ -18,9 +18,9 @@
 
 问题场景：登陆页面需要一个以忘记密码为入口进而开展验证流程的需求，具体如下：
 
-![image-20220701193551373](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20220701193551373.png)
+![image-20220701193551373](https://github.com/yinhongGITHUB/AdvancedProjectCommunication/blob/main/images/image-20220701193551373.png)
 
-![image-20220701193310768](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20220701193310768.png)
+![image-20220701193310768](https://github.com/yinhongGITHUB/AdvancedProjectCommunication/blob/main/images/image-20220701193310768.png)
 
 由于此时是未登陆状态，用户的一切操作都是不可信的。当输入一次图形验证码之后，所获的cid，只能允许获取一次验证码。当用户在第一次获取验证码之后，等待六十秒，再次点击获取验证码，会提示，请刷新图形验证码并验证。但是cid是不会变的，后端检测的是在获取验证码之前，有没有进行一次图形验证码的验证。
 
@@ -46,7 +46,7 @@
 
 下面同样是在写验证流程路由时记录的代码片段：
 
-![image-20220701201642980](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20220701201642980.png)可以清楚的看到在该路由文件的开头，详细的标注出了当时开发**验证流程**时的一些注意事项和心得感悟，并在每一流程的上方，都有jsDoc注释进行解释，方便开发者们理解其意图。以便能更加舒服的迭代我的代码。毕竟我可不希望在未来某一天敲代码时突然打喷嚏。被人从背后戳脊梁骨的感觉可太不好受了。
+![image-20220701201642980](https://github.com/yinhongGITHUB/AdvancedProjectCommunication/blob/main/images/image-20220701201642980.png)可以清楚的看到在该路由文件的开头，详细的标注出了当时开发**验证流程**时的一些注意事项和心得感悟，并在每一流程的上方，都有jsDoc注释进行解释，方便开发者们理解其意图。以便能更加舒服的迭代我的代码。毕竟我可不希望在未来某一天敲代码时突然打喷嚏。被人从背后戳脊梁骨的感觉可太不好受了。
 
 还记得再给我导师分享这个文件的时候，恰巧他问的问题我都已经在上面标注出来了。看着对方的神情从疑惑到更加**疑惑**属实是一件非常振奋人心的事情，哈哈哈哈哈，我仿佛穿越时空一般，来到他身边讲解我当时遇到的问题，以及我是如何解决的。
 
